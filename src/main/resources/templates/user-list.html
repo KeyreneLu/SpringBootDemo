@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--collapse 边框只显示一条-->
+<body>
+    <table border="1px solid #8968CD" style="border-collapse: collapse;">
+        <tr>
+            <th>ID</th>
+            <th>username</th>
+            <th>sex</th>
+            <th>birthday</th>
+            <th>address</th>
+            <th>phone</th>
+        </tr>
+        <#list users as user>
+            <tr>
+                <th>${user.id!}</th>
+                <th>${user.username!}</th>
+                <th>${user.sex!}</th>
+                <th>${user.birthday!}</th>
+                <th>${user.address!}</th>
+                <th>${user.phone!}</th>
+            </tr>
+        </#list>
+    </table>
+</body>
+</html>

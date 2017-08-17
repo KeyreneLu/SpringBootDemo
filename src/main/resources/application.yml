@@ -1,0 +1,29 @@
+cupSize: B
+
+person:
+  age: 25
+  sex: male
+  name: keyrene
+  phone: 15272305454
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  freemarker:
+    cache: false
+    check-template-location: true
+    content-type: text/html
+    suffix: .html
+    template-loader-path: classpath:/templates/
+    charset: UTF-8
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+#ddl-auto 属性 create 创建一个空的表 update 创建的时候更新表
+
